@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="TicTacToe, JavaScript, HTML , CSS , Q&A">
+    <meta name="author" content="Nika Todua">
+    <meta property="og:image" content="image/tictactoe_desktop.webp" />
+    <meta property="og:title" content=" • Tic Tac Toe • " />
+    <meta property="og:description" content="Play tic tac toe with friend" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <div class="option" id="option">
+            <div class="wrapper">
+                <a onclick="start(`option`,`show`,`place`)"><span>Start</span></a>
+            </div>
+        </div>
+        <div class="show" id="show">
+            <div class="names">
+                <p id="displayFirstPlayerNumber"></p>
+                <p id="displaySecondPlayerNumber"></p>
+                <p id="displayPlayerTurn">Now making move X</p>
+            </div>
+            <div class="restart">
+                <div class="wrapper">
+                    <a onclick="restart()"><span>Restart</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="place" id="place">
+            <div class="cube" id="1" onclick="displayPoint(`1`)"></div>
+            <div class="cube" id="2" onclick="displayPoint(`2`)"></div>
+            <div class="cube" id="3" onclick="displayPoint(`3`)"></div>
+            <div class="cube" id="4" onclick="displayPoint(`4`)"></div>
+            <div class="cube" id="5" onclick="displayPoint(`5`)"></div>
+            <div class="cube" id="6" onclick="displayPoint(`6`)"></div>
+            <div class="cube" id="7" onclick="displayPoint(`7`)"></div>
+            <div class="cube" id="8" onclick="displayPoint(`8`)"></div>
+            <div class="cube" id="9" onclick="displayPoint(`9`)"></div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
